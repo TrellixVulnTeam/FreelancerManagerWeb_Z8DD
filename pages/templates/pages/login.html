@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block 'content' %}
+<head>
+        <link rel="stylesheet" href="{% static 'login.css' %}">
+
+</head>
+<div class="block_login">
+        <form action="" class="login_form">
+            <h3 class="title_form">Freelancer Manager</h3>
+            <input type="text" class="login_input" placeholder="Username"><br>
+            <input type="password" class="login_input" placeholder="Password">
+            <div class="login_btn">
+                <b>Login</b>
+            </div>
+            <p class="p_login"><b>Create an count       </b></p>
+            <p class="p_login"><b>Forgot password?</b></p>
+        </form>
+    </div>
+{% endblock %}

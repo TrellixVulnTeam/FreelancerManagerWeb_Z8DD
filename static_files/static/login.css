@@ -1,0 +1,54 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+:root{
+    --primary-color: #f1f1f1;
+    --secondary-color: #8b8b8b;
+    --tertiary-color: #808080;
+}
+
+
+body{
+    background-color: var(--secondary-color);
+    text-align: center;
+    background-image: url('imagens/wallpaper_5.jpg');
+    background-size: cover;
+}
+
+.block_login{
+    padding: 5%;
+    margin-top: 8%;
+    display: inline-block;
+    border-radius: 3%;
+    margin-bottom: 2em;
+    backdrop-filter: blur(15px);   /*Fundo estilo apple */
+    background-color: rgba(255, 255, 255, 0.3); /* Fundo estilo apple */
+}
+
+.title_form{
+    font-family: 'Marcellus SC', serif;
+    font-size: 1.5em;
+    margin-bottom: 20%;
+}
+
+.login_input{
+    padding-top: 0.8em;
+    padding-right: 1em;
+    padding-left: 0.2em;
+    margin-bottom: 0.8em;
+}
+
+.login_btn{
+    background-color: #7e96e0;
+    width: 85%;
+    margin: auto;
+    padding: 2%;
+    margin-bottom: 30%;
+}
+
+.p_login{
+    font-family: 'Roboto', sans-serif;
+    margin: auto;
+}
