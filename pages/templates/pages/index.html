@@ -1,0 +1,88 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block 'content' %}
+<div class="container">
+
+        <div class="part_1">
+            <div class="block">
+                <form>
+                    <ul>
+                        <il><input class="details_job" type="name" placeholder="Name of job" id="name_job"></il>
+                        <br>
+                        <il><input class="details_job" type="number" placeholder="Revenues (R$)" id="revenues"></il>
+                        <br>
+                        <il><input class="details_job" type="number" placeholder="Expenses (R$)" id="expenses"></il>
+                        <br>
+                        <il><input class="details_job" type="number" placeholder="Time spent (H)" id="time"></il>
+                        <br>
+                        <button class="special_button" onclick="showResults()" type="button">Send</button>
+                    </ul>
+                </form>
+            </div>
+            <div id="results"></div>
+        </div>
+        <div class="part_2">
+            <h2 class="title">HOW IT WORKS ?</h2>
+            <div class="steps">
+            <div class="step_1">
+                <h3 class="title_h3">Step 1</h3>
+                <p class="gray_p">Insert your datas in our site.</p>
+            </div>
+            <div class="step_2">
+                <h3 class="title_h3">Step 2</h3>
+                <p class="gray_p">Hold the datas be processed.</p>
+            </div>
+            <div class="step_3">
+                <h3 class="title_h3">Step 3</h3>
+                <p class="gray_p">Receive your relatory of projects for a time determined by you.</p>
+            </div>
+        </div>
+        </div>
+        <div class="part_3">
+            <h2 class="title">WHO WE ARE ?</h2>
+            <div class="about">
+                <div class="about_1">
+                    <img src="static/images/about__1.jpg" class="img_about">
+                    <h3 class="title_h3">Solver problems</h3>
+                    <p class="gray_p">We analyze the problems and execute the best cost-effective solution.</p>
+                </div>
+                <div class="about_2">
+                    <img src="static/images/about_2.jpg" class="img_about">
+                    <h3 class="title_h3">Build your marketing</h3>
+                    <p class="gray_p">We consider the best tools and has a best team for build your marketing.</p>
+                </div>
+                <div class="about_3">
+                    <img src="static/images/about_3.jpg" class="img_about">
+                    <h3 class="title_h3">High-tech</h3>
+                    <p class="gray_p">We build your site, landing-pages, web-apps and much more.</p>
+                </div>
+            </div>
+        </div>
+        <div class="part_2">
+            <h2 class="title">WHAT CLIENTS SAY ?</h2>
+            <div class="depoiments">
+                <div class="client_1">
+                    <p class="clients_p1">Phasellus eget erat vel dolor consectetur congue at et nibh.</p>
+                    <img src="static/images/client_1.jpg" alt="" class="clients_img">
+                    <h3 class="clients_h3">França Letícia</h3>
+                    <p class="clients_p">Youtuber</p>
+                </div>
+                <div class="client_2">
+                    <p class="clients_p1">Lorem ipsum dolor sit amet, consectetur adipiscing elit.  </p>
+                    <img src="static/images/client_2.jpg" alt="" class="clients_img">
+                    <h3 class="clients_h3">Marcus Oliver</h3>
+                    <p class="clients_p">Co-founder RedixFiles</p>
+                </div>
+            </div>
+        </div>
+        <div class="part_5">
+            <h3 class="social_title">Find us on Social Media</h3>
+            <div class="social_media">
+                <img class="img_1" src="static/images/youtube.png">
+                <img class="img_2" src="static/images/insta.png">
+            </div>
+
+        </div>
+
+    <script src="{% static 'script.js' %}"></script>
+{% endblock %}
